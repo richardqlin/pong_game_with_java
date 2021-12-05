@@ -5,12 +5,12 @@ import java.awt.*;
 
 public class Ball {
 
-    public static final int SIZE = 16;
+    public static final int SIZE = 25;
 
     private int x, y;
     private int xVel, yVel; // value either 1 or -1
 
-    private int speed = 5;
+    private int speed = 4;
 
 
     public Ball() {
@@ -41,7 +41,7 @@ public class Ball {
 
     public void draw(Graphics g) {
         g.setColor(Color.white);
-        g.fillRect(x, y, SIZE, SIZE);
+        g.fillOval(x, y, SIZE, SIZE);
 
     }
 
